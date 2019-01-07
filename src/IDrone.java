@@ -1,5 +1,6 @@
-import java.util.HashSet;
+
+import java.util.Map;
 
 public interface IDrone {
-    HashSet<Wheat> scanField();
+    Map<String, Wheat> scanField();
 }
