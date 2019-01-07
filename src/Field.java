@@ -1,5 +1,5 @@
 public class Field {
-    private static int[][] field = new int[10000][10000];
+    private static int[][] field = new int[5][2];
 
     public static int[][] getField() {
         return field;

@@ -8,8 +8,7 @@ public class Harvester implements IHarvester{
     private int numberOfWheel;
     private WheelType typeOfWheel;
     private int numberOfSeats;
-    private HashSet<Wheat> wheatHashSet;
-    private Drone drone;
+    private BoardComputer boardComputer;
 
 
     public Harvester(CuttingName cutting, int storage,
@@ -22,8 +21,7 @@ public class Harvester implements IHarvester{
         this.numberOfWheel = numberOfWheel;
         this.typeOfWheel = typeOfWheel;
         this.numberOfSeats = numberOfSeats;
-        this.drone = new Drone();
-        this.wheatHashSet = drone.scanField();
+        this.boardComputer = new BoardComputer();
     }
     /*
     @Override
@@ -66,8 +64,4 @@ public class Harvester implements IHarvester{
         return false;
     }
     */
-
-    public HashSet<Wheat> getWheatHashSet() {
-        return wheatHashSet;
-    }
 }
