@@ -11,7 +11,7 @@ public class Wheat {
     }
 
     public String toString () {
-        return "X: " + x + " Y: " + y + " Anzahl: " + numberOfGrain;
+        return "X: " + x + " Y: " + y + " Anzahl: " + numberOfGrain + "\n";
     }
 
     public int getNumberOfGrain() {

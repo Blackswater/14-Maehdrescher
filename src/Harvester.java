@@ -23,6 +23,11 @@ public class Harvester implements IHarvester{
         this.numberOfSeats = numberOfSeats;
         this.boardComputer = new BoardComputer();
     }
+
+    public BoardComputer getBoardComputer() {
+        return boardComputer;
+    }
+
     /*
     @Override
     public boolean engineOn() {
