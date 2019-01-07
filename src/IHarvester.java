@@ -1,4 +1,5 @@
 public interface IHarvester {
+    /*
     boolean engineOn();
     boolean engineOff();
     boolean leftTurn();
@@ -7,4 +8,5 @@ public interface IHarvester {
     boolean reverse();
     boolean cuttingOn();
     boolean cuttingOff();
+    */
 }
