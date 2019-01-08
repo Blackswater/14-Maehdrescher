@@ -1,8 +1,7 @@
-import java.util.HashSet;
 
 public class Harvester implements IHarvester{
-    private Engine engine;
-    private CuttingName cutting;
+    private IEngine engine;
+    private CuttingSystem cutting;
     private int storage;
     private LightName lights;
     private int numberOfWheel;
@@ -11,7 +10,9 @@ public class Harvester implements IHarvester{
     private BoardComputer boardComputer;
 
 
-    public Harvester(CuttingName cutting, int storage,
+
+
+    public Harvester(CuttingSystem cutting, int storage,
                      LightName lights, int numberOfWheel,
                      WheelType typeOfWheel, int numberOfSeats) {
         this.engine = new Engine(4, "A100", 350, this);

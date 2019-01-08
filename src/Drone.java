@@ -10,7 +10,7 @@ public class Drone implements IDrone {
         for (int i = 0; i <= Field.getField().length; i++) {
             for (int j = 0; j <= Field.getField().length; j++) {
 
-                wheatHashSet.put(String.valueOf(i)+String.valueOf(j),new Wheat(i,j));
+                wheatHashSet.put(String.valueOf(0)+String.valueOf(i)+String.valueOf(j),new Wheat(i,j));
             }
         }
 
