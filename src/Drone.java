@@ -4,6 +4,10 @@ import java.util.Map;
 
 public class Drone implements IDrone {
 
+    /*
+    Scanning Field and fills the HashMap
+     */
+
     @Override
     public Map<String, Wheat> scanField() {
         Map<String, Wheat> wheatHashSet = new HashMap<>();
