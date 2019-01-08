@@ -1,4 +1,4 @@
-public class Engine {
+public class Engine implements IEngine{
     private int numberOfCylinder;
     private String type;
     private int power;
