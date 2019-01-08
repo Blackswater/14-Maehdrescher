@@ -25,6 +25,9 @@ public class BoardComputer {
     Searching for Grain in X,Y Position
      */
     public void findWheatOnPosition(int x, int y) {
-        System.out.println(wheatHashSet.get(String.valueOf(x)+String.valueOf(y)));
+        String xs = String.valueOf(x);
+        String ys = String.valueOf(y);
+        String os = String.valueOf(0);
+       System.out.println(wheatHashSet.get(os+xs+ys));
     }
 }
