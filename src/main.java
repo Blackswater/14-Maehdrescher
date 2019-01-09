@@ -5,7 +5,7 @@ public class main {
         Harvester harvester = new Harvester(new WeizenCutting(CuttingName.Weizen, 3),
                 10000, LightName.Breaklight, 4, WheelType.Wheel, 1);
         long searchtime = System.nanoTime();
-        harvester.getBoardComputer().findWheatOnPosition(0,250);
+        harvester.getBoardComputer().findWheatOnPosition(0,25);
 
         long finishtime = System.nanoTime();
 

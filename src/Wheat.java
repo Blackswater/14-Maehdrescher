@@ -25,4 +25,10 @@ public class Wheat {
     public int getY() {
         return y;
     }
+
+    public int hashCode() {
+        int hash = 7;
+        hash = 31 * x *y;
+        return hash;
+    }
 }
