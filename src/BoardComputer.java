@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class BoardComputer {
-    private Map<String, Wheat> wheatHashSet;
-    private Drone drone;
+    private Map<String, Wheat> wheatHashSet; //Map for Position and Grain
+    private IDrone drone; //interface
 
     public BoardComputer() {
         this.drone = new Drone();

@@ -27,8 +27,7 @@ public class Wheat {
     }
 
     public int hashCode() {
-        int hash = 7;
-        hash = 31 * x *y;
+        int hash = 7 * x *y;
         return hash;
     }
 }

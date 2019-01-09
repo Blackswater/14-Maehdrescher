@@ -1,19 +1,18 @@
+import java.util.ArrayList;
 
 public class Harvester implements IHarvester{
-    private IEngine engine;
-    private CuttingSystem cutting;
+    private IEngine engine; //Interface
+    private CuttingSystem cutting; //one to one
     private int storage;
-    private LightName lights;
+    private ArrayList<LightName> lights; //one to Many
     private int numberOfWheel;
     private WheelType typeOfWheel;
     private int numberOfSeats;
-    private BoardComputer boardComputer;
-
-
+    private BoardComputer boardComputer; //one to one
 
 
     public Harvester(CuttingSystem cutting, int storage,
-                     LightName lights, int numberOfWheel,
+                     ArrayList<LightName> lights, int numberOfWheel,
                      WheelType typeOfWheel, int numberOfSeats) {
         this.engine = new Engine(4, "A100", 350, this);
         this.cutting = cutting;
