@@ -10,7 +10,9 @@ public class BoardComputer {
         sorter();
 
     }
-
+    /*
+    Sorter for the ArrayList, first Grain, xPosition, YPosition
+     */
     public void sorter() {
         List<Wheat> sortedList = new ArrayList<>(wheatHashSet.values());
         Collections.sort(sortedList, new CountGrainSorter()
@@ -19,6 +21,9 @@ public class BoardComputer {
         System.out.println(sortedList);
     }
 
+    /*
+    Searching for Grain in X,Y Position
+     */
     public void findWheatOnPosition(int x, int y) {
         String xs = String.valueOf(x);
         String ys = String.valueOf(y);
